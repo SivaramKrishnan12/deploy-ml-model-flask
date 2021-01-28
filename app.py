@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 from flask import Flask, request, jsonify, render_template, json, Response, redirect, flash
 import pickle
-from config import Config
+# from config import Config
 from forms import Pedestrian_prediction_Form 
 from datetime import datetime, timedelta
 
