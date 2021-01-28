@@ -5,16 +5,16 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template, json, Response, redirect, flash
 import pickle
 # from config import Config
-from forms import Pedestrian_prediction_Form 
-from datetime import datetime, timedelta
+# from forms import Pedestrian_prediction_Form 
+# from datetime import datetime, timedelta
 
 # model = pickle.load(open('iri.pkl', 'rb'))
 
 app = Flask(__name__)
 
-# @app.route('/')
-# def man():
-#     return render_template('home.html')
+@app.route('/')
+def man():
+    return render_template('index.html')
 
 
 # @app.route('/predict', methods=['POST'])
@@ -36,11 +36,11 @@ app = Flask(__name__)
 # app.config.from_object(Config)
 #model = pickle.load(open('model.pkl', 'rb'))
 
-@app.route("/")
-@app.route("/index")
-@app.route("/home")
-def index():
-    return render_template("index.html", index = True)
+# @app.route("/")
+# @app.route("/index")
+# @app.route("/home")
+# def index():
+#     return render_template("index.html", index = True)
 
 # @app.route("/Pedestrian_forecast")
 # def Pedestrian_forecast():
